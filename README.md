@@ -8,7 +8,7 @@
 
 * [:zap: Next API Data](#zap-next-api-data)
   * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
-  * [:books: General info](#books-general-info)
+  * [:books: General Info](#books-general-info)
   * [:camera: Screenshots](#camera-screenshots)
   * [:signal_strength: Technologies](#signal_strength-technologies)
   * [:floppy_disk: Setup](#floppy_disk-setup)
@@ -18,7 +18,7 @@
   * [:file_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
 
-## :books: General info
+## :books: General Info
 
 * Lists prices of cryptocurrencies, depending on setup of API http request.
 * Next.js is for server-rendered react apps. It has automatic code splitting, simple page-based routing, built-in CSS support and hot reloading.
@@ -32,6 +32,11 @@
 * [Node.js v12](https://nodejs.org/) javascript runtime using the [Chrome V8 engine](https://v8.dev/).
 * [React v17](https://reactjs.org/) Javascript library.
 * [Next v10](https://nextjs.org/) minimalist framework for rendering react apps on the server.
+* [Bootswatch v4](https://www.bootstrapcdn.com/bootswatch/) Bootstrap CDN theme
+* [Bootstrap v5](https://getbootstrap.com/) toolkit
+* [HTML to JSX Compiler](https://magic.reactjs.net/htmltojsx.htm)
+* [JSON Placeholder](https://jsonplaceholder.typicode.com/) fake JSON data
+* [Node module isomorphic-unfetch v3](https://www.npmjs.com/package/isomorphic-unfetch) for unfetch & node-fetch for client & server.
 
 ## :floppy_disk: Setup
 
@@ -40,27 +45,16 @@
 
 ## :computer: Code Examples
 
-* extract of `index.js` - function to get API data.
+* extract of tba
 
 ```javascript
-
-// async await function to get crypto currency prices - no API key required.
-Index.getInitialProps = async function() {
-  const res = await fetch
-  ('https://api.coindesk.com/v1/bpi/currentprice.json');
-    const data = await res.json();
-
-  return {
-    bpi: data.bpi
-  };
-}
-
+tba
 ```
 
 ## :clipboard: Status & To-Do List
 
 * Status: in work
-* To-Do: nothing.
+* To-Do: add crypto API.
 
 ## :clap: Inspiration
 
