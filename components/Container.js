@@ -7,7 +7,7 @@ const Container = (props) => (
 			<title>API DATA</title>
 			<link
 				rel="stylesheet"
-				href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css"
+				href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/spacelab/bootstrap.min.css"
 			/>
 		</Head>
 		<Navigation />

@@ -6,7 +6,7 @@ const Services = () => (
 		<Head>
 			<title>API Data Services</title>
 		</Head>
-		<h1>Services</h1>
+		<h1>API Data Services</h1>
 		<p>Lorem30</p>
 	</Container>
 );
