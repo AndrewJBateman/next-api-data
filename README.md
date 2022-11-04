@@ -1,6 +1,6 @@
 # :zap: Next API Data
 
-* A Next.js React cryptocurrency api app.
+* Next.js connected to a [PocketBase](https://pocketbase.io/) SQL database.
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/next-api-data?style=plastic)
@@ -24,9 +24,8 @@
 
 ## :books: General Info
 
-* Lists prices of cryptocurrencies, depending on setup of API http request.
-* Next.js is for server-rendered react apps. It has automatic code splitting, simple page-based routing, built-in CSS support and hot reloading. Every component file in the pages folder is treated as a page
-* Folder structure: `pages/_app.js` is the main app component, 'utils'
+* Allows blog posts to be created and stored in a SQL database.
+* Partial posts (title and category) are displayed and clicking on a partial post displays the entire post
 
 ## :camera: Screenshots
 
@@ -34,40 +33,34 @@
 
 ## :signal_strength: Technologies
 
-* [Node.js v12](https://nodejs.org/) javascript runtime using the [Chrome V8 engine](https://v8.dev/).
-* [React v17](https://reactjs.org/) Javascript library.
-* [Next v10](https://nextjs.org/) minimalist framework for rendering react apps on the server.
-* [Bootswatch v4](https://www.bootstrapcdn.com/bootswatch/) Bootstrap CDN theme
-* [Bootstrap v5](https://getbootstrap.com/) toolkit
-* [HTML to JSX Compiler](https://magic.reactjs.net/htmltojsx.htm)
-* [JSON Placeholder](https://jsonplaceholder.typicode.com/) fake JSON data
-* [Node module isomorphic-unfetch v3](https://www.npmjs.com/package/isomorphic-unfetch) for unfetch & node-fetch for client & server.
-* [Node module Apollo Client](https://www.npmjs.com/package/apollo-client) caching GraphQL client to UI components can fetch data via GraphQL. More documentation [here](https://apollographql.com/docs/react/).
-* [Node module apollo-cache-inmemory](https://www.npmjs.com/package/apollo-cache-inmemory) normalized data store that supports all of Apollo Client 1.0's features without the dependency on Redux.
-* [Node module apollo-link-http](https://www.npmjs.com/package/apollo-link-http) to get GraphQL results over a network using HTTP fetch.
+* [Next v13](https://nextjs.org/) minimalist framework for rendering react apps on the server.
+* [React v18](https://reactjs.org/) Javascript library.
+* [Pocketbase v0.7.1](https://pocketbase.io/) SQL backend, [documentation](https://www.npmjs.com/package/pocketbase)
 
 ## :floppy_disk: Setup
 
+* Download [Pocketbase](https://pocketbase.io/docs/)
+* `./pocketbase serve` to run database, access the Admin dashboard UI and create admin account
+* I created a collection called `blog` with `title, content, category` fields, all set to public access
 * `npm run dev` runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-* `npm run build` builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+* `npm run build` builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ## :computer: Code Examples
 
 * extract of tba
 
-```javascript
+```typescript
 tba
 ```
 
 ## :clipboard: Status & To-Do List
 
-* Status: in work
-* To-Do: add crypto API.
+* Status: Working
+* To-Do: Add Tailwind table/card grid, card detail back button, category filter
 
 ## :clap: Inspiration
 
-* [Traversy Media: Next.js Crash Course 2021](https://www.youtube.com/watch?v=mTz0GXj8NN0)
-* [CoinDesk Bitcoin Price Index API](https://www.coindesk.com/api)
+* [PocketBase documentation](https://pocketbase.io/docs/)
 
 ## :file_folder: License
 
