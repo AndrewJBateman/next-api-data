@@ -36,18 +36,18 @@ export default function CreatePost() {
       <h3>New Post</h3>
       <input
         type="text"
-        placeholder="Title"
+        placeholder="Title..."
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
       <textarea
-        placeholder="Content"
+        placeholder="Content..."
         value={content}
         onChange={(e) => setContent(e.target.value)}
       />
       <input
         type="text"
-        placeholder="Category"
+        placeholder="Category..."
         value={category}
         onChange={(e) => setCategory(e.target.value)}
       />

@@ -1,24 +1,22 @@
-/* eslint-disable @next/next/no-head-element */
-import Link from 'next/link';
-import './globals.css';
+import "@/styles/globals.css";
+import NavHeader from "@/components/NavHeader";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html>
-      <body>
-        <main>
-          <nav>
-            <Link href="/">Home</Link>
-            <Link href="/blog">Blog</Link>
-          </nav>
-          {children}
-        </main>
-        <head></head>
-      </body>
-    </html>
-  );
+type Props = {
+	children: React.ReactNode;
+};
+
+export default function RootLayout({ children }: Props) {
+	return (
+		<html lang='en'>
+			<head>
+				<title>Next 13 - TailwindCSS Blog</title>
+				<meta name="description" content="saas blog" />
+				<link rel="icon" href="/favicon.ico" />
+			</head>
+			<body className='bg-gray-50 dark:bg-gray-900'>
+				<NavHeader />
+				<main className="flex flex-col text-center px-8">{children}</main>
+			</body>
+		</html>
+	);
 }

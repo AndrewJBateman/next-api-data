@@ -1,4 +1,3 @@
-import styles from '../Blog.module.css';
 
 async function getPost(postId: string) {
   const res = await fetch(
@@ -17,8 +16,8 @@ export default async function PostPage({ params }: any) {
   return (
     <div>
       <h1>blog/{post.id}</h1>
-      <div className={styles.post}>
-        <h3>{post.title}</h3>
+      <div>
+        <h3 className="text-blue-700">{post.title}</h3>
         <h5>{post.content}</h5>
         <p>Category: {post.category}</p>
         <p>Created: {post.created}</p>

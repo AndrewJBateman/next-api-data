@@ -1,6 +1,5 @@
 import PocketBase from "pocketbase";
 import Link from "next/link";
-import styles from "./Blog.module.css";
 import CreatePost from "./CreatePost";
 
 async function getBlog() {
@@ -19,8 +18,8 @@ export default async function BlogPage() {
 
   return (
     <div>
-      <h1>Blog</h1>
-      <div className={styles.grid}>
+      <h1 className="text-blue-700">Blog</h1>
+      <div className="text-blue-900">
         {blog?.map((post) => {
           return <Post key={post.id} post={post} />;
         })}
@@ -36,7 +35,7 @@ function Post({ post }: any) {
 
   return (
     <Link href={`/blog/${id}`}>
-      <div className={styles.post}>
+      <div className="">
         <h2>{title}</h2>
         <p>{category}</p>
       </div>
