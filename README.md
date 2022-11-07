@@ -1,6 +1,6 @@
 # :zap: Next API Data
 
-* Next.js connected to a [PocketBase](https://pocketbase.io/) SQL database.
+* Next.js displays data from a [PocketBase](https://pocketbase.io/) SQL database.
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/next-api-data?style=plastic)
@@ -25,7 +25,9 @@
 ## :books: General Info
 
 * Allows blog posts to be created and stored in a SQL database.
-* Partial posts (title and category) are displayed and clicking on a partial post displays the entire post
+* Responsive layout so it can be used on a PC or mobile
+* Blog page: Partial posts (title and category) are displayed and clicking on a partial post displays the entire post
+* To be made into a SAAS app
 
 ## :camera: Screenshots
 
@@ -36,6 +38,9 @@
 * [Next v13](https://nextjs.org/) minimalist framework for rendering react apps on the server.
 * [React v18](https://reactjs.org/) Javascript library.
 * [Pocketbase v0.7.1](https://pocketbase.io/) SQL backend, [documentation](https://www.npmjs.com/package/pocketbase)
+* [Tailwind CSS v3](https://tailwindcss.com/docs/guides/nextjs)
+* [clsx](https://www.npmjs.com/package/clsx) utility for constructing className strings conditionally.
+* [Hero SVG Icons](https://heroicons.com/)
 
 ## :floppy_disk: Setup
 
@@ -55,7 +60,7 @@ tba
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working
+* Status: Working database access, responsive navbar.
 * To-Do: Add Tailwind table/card grid, card detail back button, category filter
 
 ## :clap: Inspiration
